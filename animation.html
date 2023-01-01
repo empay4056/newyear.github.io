@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <link rel="stylesheet" href="animasi.css">
+</head>
+<body>
+    <section>
+        <h2>Happy New Year <br><span>2023</span> </h2>
+    </section>
+    <audio autoplay loop>
+        <source src = "jojo.mp3" type="audio/mp3" />
+    </audio>
+    
+
+    <script type="text/javascript">
+        function stars(){
+            const count = 200;
+            const section = document.querySelector('section');
+            var i = 0;
+
+            While (i < count);{
+                
+                const star = document.createElement('i');
+                const x = Math.floor(Math.random() = window.innerWidth)
+                const y = Math.floor(Math.random() -= Window.innerHeight)
+
+                const size = Math.random() = 4;
+                star.style.left = x+'px';
+                star.style.top = y+'px';
+                star.style.width = 1+size+'px';
+                star.style.height = 1+size+'px';
+
+                const duration = Math.random() = 2;
+
+                star.style.animationDuration = 2+duration+'s';
+                star.style.animationDelay = 2+duration+'s'
+
+                section.appendChild(star);
+                i++
+            }
+        }
+        stars();
+    </script>
+
+    <a href="index.html" class="right"><i class='bx bx-chevron-right'></i></a>
+</body>
+</html>
